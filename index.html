@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Bounty Search Engine</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bug Bounty Search Engine</h1>
+        <label for="target">Target Domain:</label>
+        <input type="text" id="target" placeholder="example.com">
+
+        <details open>
+            <summary>Archivos y Directorios Expuestos</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(1)">Directory listing</button>
+                <button class="futuristic-button" onclick="googleSearch(2)">Config files</button>
+                <button class="futuristic-button" onclick="googleSearch(3)">Database files</button>
+                <button class="futuristic-button" onclick="googleSearch(4)">Log files</button>
+                <button class="futuristic-button" onclick="googleSearch(5)">Backups/Old files</button>
+                <button class="futuristic-button" onclick="googleSearch(41)">main.yml</button>
+                <button class="futuristic-button" onclick="googleSearch(46)">conf.php</button>
+                <button class="futuristic-button" onclick="googleSearch(48)">admin.zip backup</button>
+                <button class="futuristic-button" onclick="googleSearch(54)">wp-config.php</button>
+                <button class="futuristic-button" onclick="googleSearch(58)">WP backups</button>
+                <button class="futuristic-button" onclick="googleSearch(59)">conf.mysql</button>
+                <button class="futuristic-button" onclick="googleSearch(60)">*.yml files</button>
+                <button class="futuristic-button" onclick="googleSearch(61)">docker-compose.yml</button>
+                <button class="futuristic-button" onclick="googleSearch(62)">pom.xml</button>
+                <button class="futuristic-button" onclick="googleSearch(63)">/etc files</button>
+                <button class="futuristic-button" onclick="googleSearch(65)">PHP Extensions w/ parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(9)">phpinfo()</button>
+                <button class="futuristic-button" onclick="googleSearch(17)">.htaccess files</button>
+                <button class="futuristic-button" onclick="googleSearch(22)">API Endpoints</button>
+                <button class="futuristic-button" onclick="googleSearch(74)">API Docs</button>
+                <button class="futuristic-button" onclick="googleSearch(66)">Juicy Extensions</button>                
+                <button class="futuristic-button" onclick="googleSearch(76)">Sensitive Documents</button>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>WordPress & CMS</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(10)">Find WordPress #1</button>
+                <button class="futuristic-button" onclick="googleSearch(20)">Find WordPress #2</button>
+                <button class="futuristic-button" onclick="googleSearch(43)">WP Juicy file 1</button>
+                <button class="futuristic-button" onclick="googleSearch(50)">WP Juicy file 2</button>
+                <button class="futuristic-button" onclick="googleSearch(54)">WP Juicy file 3</button>
+                <button class="futuristic-button" onclick="googleSearch(45)">WP Plugin</button>
+
+                <button class="futuristic-button" onclick="googleSearch(40)">wp-content Info</button>
+                <button class="futuristic-button" onclick="googleSearch(58)">WP Backup</button>
+                <button class="futuristic-button" onclick="googleSearch(51)">Drupal Login</button>
+                <button class="futuristic-button" onclick="googleSearch(52)">Joomla DB</button>
+                
+            </div>
+        </details>
+
+        <details>
+            <summary>Errores y Vulnerabilidades</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(77)">Sensitive Parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(7)">SQL errors</button>
+                <button class="futuristic-button" onclick="googleSearch(14)">Apache Struts</button>
+                <button class="futuristic-button" onclick="googleSearch(13)">Open Redirects</button>
+                <button class="futuristic-button" onclick="googleSearch(55)">RPC Protocol</button>
+                <button class="futuristic-button" onclick="googleSearch(56)">download.php</button>
+                <button class="futuristic-button" onclick="googleSearch(57)">jwks-rsa</button>
+                <button class="futuristic-button" onclick="googleSearch(64)">SQL Installs</button>
+                <button class="futuristic-button" onclick="googleSearch(44)">File Upload</button>
+
+                <button class="futuristic-button" onclick="googleSearch(67)">High % inurl keywords</button>
+                <button class="futuristic-button" onclick="googleSearch(31)">Server Errors</button>
+                <button class="futuristic-button" onclick="googleSearch(33)">XSS prone parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(68)">Open Redirect prone parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(69)">SQLi Prone Parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(70)">SSRF Prone Parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(71)">LFI Prone Parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(72)">RCE Prone Parameters</button>
+                <button class="futuristic-button" onclick="googleSearch(73)">File upload endpoints</button>
+                <button class="futuristic-button" onclick="googleSearch(79)">Disclosed XSS and Open Redirects</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>Paneles y Accesos</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(6)">Login pages</button>
+                <button class="futuristic-button" onclick="googleSearch(42)">Admin Portal</button>
+                <button class="futuristic-button" onclick="googleSearch(12)">Install/Setup</button>
+                <button class="futuristic-button" onclick="googleSearch(75)">Test Environments</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>Subdominios y Certificados</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(18)">Subdomains</button>
+                <button class="futuristic-button" onclick="googleSearch(19)">Sub-Subdomains</button>
+                <button class="futuristic-button" onclick="googleSearch(30)">Cert Transparency</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>Servicios</summary>
+            <div class="dork-buttons">               
+
+                <button class="futuristic-button" onclick="googleSearch(38)">GeoServer WFS</button>
+                <button class="futuristic-button" onclick="googleSearch(39)">ArcGIS REST</button>
+                <button class="futuristic-button" onclick="googleSearch(47)">Sharing API Info</button>
+                <button class="futuristic-button" onclick="googleSearch(49)">Github API</button>
+                <button class="futuristic-button" onclick="googleSearch(78)">Adobe Experience Manager (AEM)</button>
+                <button class="futuristic-button" onclick="googleSearch(98)">JFrog Artifactory</button>
+                <button class="futuristic-button" onclick="googleSearch(99)">Firebase</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>OSINT & Indexes</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(15)">Pastebin</button>
+                <button class="futuristic-button" onclick="googleSearch(16)">LinkedIn</button>
+                <button class="futuristic-button" onclick="googleSearch(21)">GitHub</button>
+                <button class="futuristic-button" onclick="googleSearch(23)">ThreatCrowd</button>
+                <button class="futuristic-button" onclick="googleSearch(32)">Reddit</button>
+                <button class="futuristic-button" onclick="googleSearch(34)">Censys IPv4</button>
+                <button class="futuristic-button" onclick="googleSearch(35)">Censys Domain</button>
+                <button class="futuristic-button" onclick="googleSearch(36)">Censys Certs</button>
+                <button class="futuristic-button" onclick="googleSearch(28)">Web Archive #1</button>
+                <button class="futuristic-button" onclick="googleSearch(29)">Web Archive #2</button>
+                <button class="futuristic-button" onclick="googleSearch(80)">Google Groups</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>Shodan</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch()">Shodan</button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+                <button class="futuristic-button" onclick="googleSearch()"></button>
+            </div>
+        </details>
+
+        <details>
+            <summary>API Keys</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(65)">PHP Extensions w/ parameters</button>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>Code Leaks</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(81)">PasteBin</button>
+                <button class="futuristic-button" onclick="googleSearch(82)">JSFiddle</button>
+                <button class="futuristic-button" onclick="googleSearch(83)">Codebeautify</button>
+                <button class="futuristic-button" onclick="googleSearch(84)">Codepen</button>
+
+            </div>
+        </details>
+
+        <details>
+            <summary>Cloud Storage</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(85)">AWS #1</button>
+                <button class="futuristic-button" onclick="googleSearch(93)">AWS #2</button>
+                <button class="futuristic-button" onclick="googleSearch(94)">AWS #3</button>
+                <button class="futuristic-button" onclick="googleSearch(86)">Blob Core Windows</button>
+                <button class="futuristic-button" onclick="googleSearch(87)">Google APIs</button>
+                <button class="futuristic-button" onclick="googleSearch(88)">Google Drive</button>
+                <button class="futuristic-button" onclick="googleSearch(89)">Azure</button>
+                <button class="futuristic-button" onclick="googleSearch(90)">Onedrive</button>
+                <button class="futuristic-button" onclick="googleSearch(91)">Digital Ocean Spaces</button>
+                <button class="futuristic-button" onclick="googleSearch(92)">Sharepoint</button>
+                <button class="futuristic-button" onclick="googleSearch(95)">Dropbox</button>
+                <button class="futuristic-button" onclick="googleSearch(96)">Box</button>
+                <button class="futuristic-button" onclick="googleSearch(97)">Google Docs</button>
+            </div>
+        </details>
+
+        <details>
+            <summary>SWF y Otros archivos</summary>
+            <div class="dork-buttons">
+                <button class="futuristic-button" onclick="googleSearch(24)">Find SWF</button>
+                <button class="futuristic-button" onclick="googleSearch(25)">Find MIME-SWF</button>
+                <button class="futuristic-button" onclick="googleSearch(26)">SWF links (past)</button>
+                <button class="futuristic-button" onclick="googleSearch(27)">MIME-SWF (past)</button>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
