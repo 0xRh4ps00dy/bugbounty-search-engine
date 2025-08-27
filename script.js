@@ -292,7 +292,7 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 81:
-            var site = 'site:pastebin.com ' + targetDomain;
+            var site = 'site:trello.com ' + targetDomain;
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
@@ -387,36 +387,180 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 100:
-            searchQuery += ' ';
+            searchQuery += ' filetype:js apiKey';
             break;
         case 101:
-            searchQuery += ' ';
+            searchQuery += ' filetype:js token';
             break;
         case 102:
-            searchQuery += ' ';
+            searchQuery += ' inurl:.env';
             break;
         case 103:
-            searchQuery += ' ';
+            searchQuery += ' "Authorization: Bearer"';
             break;
         case 104:
-            searchQuery += ' ';
-            break;
+            var site = 'site:scribd.com ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 105:
-            searchQuery += ' ';
-            break;
+            var site = 'site:npmjs.com ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 106:
-            searchQuery += ' ';
-            break;
+            var site = 'site:npm.runkit.com ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 107:
-            searchQuery += ' ';
-            break;
+            var site = 'site:libraries.io ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 108:
-            searchQuery += ' ';
-            break;
+            var site = 'site:coggle.it ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 109:
+            var site = 'site:papaly.com ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 110:
+            var site = 'site:prezi.com ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 111:
+            var site = 'site:jsdelivr.net ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 112:
+
+        case 113:
+            var site = 'site:repl.it ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 114:
+            var site = 'site:gitter.im ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 115:
+            var site = 'site:bitbucket.org ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 116:
+            var site = 'site:*.atlassian.net ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 117:
+            var site = 'inurl:gitlab ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 118:
+            var site = 'inurl:github ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 119:
+            var site = 'ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 120:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 121:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 122:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 123:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 124:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 125:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 126:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 127:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 128:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 129:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 130:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 131:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 132:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 133:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 134:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 135:
+            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            window.open(url, '_blank');
+            return;
+        case 136:
             searchQuery += ' ';
             break;
-        case 110:
+        case 137:
+            searchQuery += ' ';
+            break;
+        case 138:
+            searchQuery += ' ';
+            break;
+        case 139:
+            searchQuery += ' ';
+            break;
+        case 140:
+            searchQuery += ' ';
+            break;
+        case 141:
+            searchQuery += ' ';
+            break;
+        case 142:
+            searchQuery += ' ';
+            break;
+        case 143:
             searchQuery += ' ';
             break;
         default:
