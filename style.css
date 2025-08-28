@@ -49,7 +49,7 @@ details {
     background: #22304a;
     border-radius: 7px;
     padding: 0 0 8px 0;
-    border-left: 5px solid #1ecbe1;
+    /* border-left: 5px solid #1ecbe1; */
 }
 summary {
     font-weight: 600;
@@ -64,7 +64,7 @@ summary {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 .futuristic-button {
     flex: 1 1 calc(33.33% - 8px);
@@ -106,6 +106,22 @@ summary {
     opacity: 1;
     filter: drop-shadow(0 4px 24px #1ecbe199);
 }
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #18243a;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 16px #0a223a99;
+}
+
+/* Ajusta el input para que se vea bien en sticky */
+.sticky-header label,
+.sticky-header input {
+    margin-bottom: 0;
+}
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -115,4 +131,4 @@ summary {
         flex: 1 1 100%;
     }
 
-}}
+}

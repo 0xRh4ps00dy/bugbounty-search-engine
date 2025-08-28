@@ -476,93 +476,615 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 120:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'hostname:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 121:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'domain:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 122:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'org:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 123:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'product:"nginx" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 124:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'product:"Apache httpd" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 125:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'product:"Microsoft-IIS" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 126:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'port:22 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 127:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'port:21 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 128:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'port:445 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 129:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'port:3389 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 130:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'port:5895 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 131:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'http.title:"Login" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 132:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'http.title:"Admin" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 133:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'http.title:"phpMyAdmin" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 134:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'http.title:"Kibana" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 135:
-            var url = 'https://www.shodan.io/search?query=' + targetDomain;
+            var site = 'http.title:"Grafana" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 136:
-            searchQuery += ' ';
-            break;
+            var site = 'http.title:"Remote Desktop" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 137:
-            searchQuery += ' ';
-            break;
+            var site = 'port:27017 product:"MongoDB" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 138:
-            searchQuery += ' ';
-            break;
+            var site = 'port:9200 product:"ElasticSearch" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 139:
-            searchQuery += ' ';
-            break;
+            var site = 'port:6379 product:"Redis" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 140:
-            searchQuery += ' ';
-            break;
+            var site = 'port:3306 product:"MySQL" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 141:
-            searchQuery += ' ';
-            break;
+            var site = 'port:5432 product:"PostgreSQL" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 142:
-            searchQuery += ' ';
-            break;
+            var site = 'http.html:"index of /" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         case 143:
-            searchQuery += ' ';
-            break;
+            var site = 'http.html:"config.php" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 144:
+            var site = 'http.html:".git" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 145:
+            var site = 'http.html:"/phpinfo.php" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 146:
+            var site = 'http.status:200 http.component:odoo port:8069 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 147:
+            var site = 'port:"2375" docker ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 148:
+            var site = 'product:"kubernetes" port:"10250" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 149:
+            var site = 'x-jenkins 200 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 150:
+            var site = 'http.title:"Jenkins" x-jenkins 200 org:"Cogent Communications" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 151:
+            var site = 'http.body="access_token=sk" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 152:
+            var site = 'http.body="token=sk" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 153:
+            var site = 'http.body="filepicker_key" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 154:
+            var site = 'http.body="amzn.mws." ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 155:
+            var site = 'http.body="slackToken =" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 156:
+            var site = 'http.body="slackToken:" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 157:
+            var site = 'http.body="slack_Token" && title="Whoops! There was an error." ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 158:
+            var site = 'http.body="sk_live" && http.body="apikey" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 159:
+            var site = 'http.body="sk_live" && http.body="api_key" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 160:
+            var site = 'http.body="sk_" && http.body="apikey" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 161:
+            var site = 'http.body="sk_" && http.body="api_key" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 162:
+            var site = 'http.body="BEGIN PRIVATE KEY" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 163:
+            var site = 'http.body="---BEGIN PRIVATE KEY---" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 164:
+            var site = 'site:github.com api key regex ' + targetDomain;
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 165:
+            var site = '"apiKey" ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 166:
+            var site = '"Bearer" ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 167:
+            var site = '"token" ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 168:
+            var site = '"Authorization" '+ targetDomain ;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 169:
+            var site = '"secret" ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 170:
+            var site = 'filename:.env OR filename:.json "api_key" ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 171:
+            var site = 'api_key ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 172:
+            var site = '“api keys” ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 173:
+            var site = 'authorization_bearer: ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 174:
+            var site = 'oauth ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 175:
+            var site = 'auth ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 176:
+            var site = 'authentication ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 177:
+            var site = 'client_secret ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 178:
+            var site = 'api_token: ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 179:
+            var site = '“api token” ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 180:
+            var site = 'client_id ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 181:
+            var site = 'password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 182:
+            var site = 'user_password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 183:
+            var site = 'user_pass ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 184:
+            var site = 'passcode ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 185:
+            var site = 'client_secret ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 186:
+            var site = 'secret ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 187:
+            var site = 'password hash ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 188:
+            var site = 'OTP ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 189:
+            var site = 'user auth ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 190:
+            var site = 'remove password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 191:
+            var site = 'root ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 192:
+            var site = 'admin ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 193:
+            var site = 'log ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 194:
+            var site = 'trash ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 196:
+            var site = 'FTP_PORT ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 197:
+            var site = 'FTP_PASSWORD ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 198:
+            var site = 'DB_DATABASE= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 199:
+            var site = 'DB_HOST= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 200:
+            var site = 'DB_PORT= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 201:
+            var site = 'DB_PASSWORD= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 202:
+            var site = 'DB_PW= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 203:
+            var site = 'DB_USER= ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 204:
+            var site = 'number ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 205:
+            var site = 'like: language:shell username ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 206:
+            var site = 'language:sql username ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 207:
+            var site = 'language:python ftp ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 208:
+            var site = 'language:bash ftp ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 209:
+            var site = 'dotfiles ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 210:
+            var site = 'filename:sftp-config.json password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 211:
+            var site = 'filename:.s3cfg ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 212:
+            var site = 'filename:config.php dbpasswd ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 213:
+            var site = 'filename:.bashrc password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 214:
+            var site = 'filename:.esmtprc password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 215:
+            var site = 'filename:.netrc password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 216:
+            var site = 'filename:_netrc password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 217:
+            var site = 'filename:.env MAIL_HOST=smtp.gmail.com ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 218:
+            var site = 'filename:prod.exs NOT prod.secret.exs ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 219:
+            var site = 'filename:.npmrc _auth ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 220:
+            var site = 'filename:WebServers.xml ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 221:
+            var site = 'filename:sftp-config.json ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 222:
+            var site = 'filename:.esmtprc password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 224:
+            var site = 'filename:passwd path:etc ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 225:
+            var site = 'filename:prod.secret.exs ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 226:
+            var site = 'filename:sftp-config.json ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 227:
+            var site = 'filename:proftpdpasswd ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 228:
+            var site = 'filename:travis.yml ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 229:
+            var site = 'filename:vim_settings.xml ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 230:
+            var site = 'filename:sftp.json path:.vscode ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 231:
+            var site = 'filename:secrets.yml password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 232:
+            var site = 'extension:sql mysql dump ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 233:
+            var site = 'extension:sql mysql dump ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 234:
+            var site = 'extension:sql mysql dump password ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 235:
+            var site = 'extension:pem private ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 236:
+            var site = 'extension:ppk private ' + targetDomain;
+            var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
+            window.open(url, '_blank');
+            return;
+        case 195:
+            var site = '"authentication disabled" "RFB 003.008" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 223:
+            var site = 'title:"Weave Scope" http.favicon.hash:567176827 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 237:
+            var site = '"MongoDB Server Information" port:27017 -authentication ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 238:
+            var site = '"Set-Cookie: mongo-express=" "200 OK" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 239:
+            var site = '"X-Jenkins" "Set-Cookie: JSESSIONID" http.title:"Dashboard" ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 240:
+            var site = '"Docker Containers:" port:2375 ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
+        case 241:
+            var site = '"Docker-Distribution-Api-Version: registry" "200 OK" -gitlab ssl:' + targetDomain;
+            var url = 'https://www.shodan.io/search?query=' + encodeURIComponent(site);
+            window.open(url, '_blank');
+            return;
         default:
             alert('Invalid option.');
             return;
