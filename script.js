@@ -53,12 +53,12 @@ function googleSearch(type) {
             searchQuery += ' ext:action | ext:struts | ext:do';
             break;
         case 15:
-            var site = 'site:pastebin.com ' + targetDomain;
+            var site = 'site:pastebin.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 16:
-            var site = 'site:linkedin.com employees ' + targetDomain;
+            var site = 'site:linkedin.com employees "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
@@ -78,7 +78,7 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 20:
-            var site = 'inurl:wp-content | inurl:wp-includes ' + targetDomain;
+            var site = 'inurl:wp-content | inurl:wp-includes "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
@@ -287,102 +287,102 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 80:
-            var site = 'site:groups.google.com ' + targetDomain;
+            var site = 'site:groups.google.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 81:
-            var site = 'site:trello.com ' + targetDomain;
+            var site = 'site:trello.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 82:
-            var site = 'site:jsfiddle.net ' + targetDomain;
+            var site = 'site:jsfiddle.net "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 83:
-            var site = 'site:codebeautify.org ' + targetDomain;
+            var site = 'site:codebeautify.org "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 84:
-            var site = 'site:codepen.io ' + targetDomain;
+            var site = 'site:codepen.io "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 85:
-            var site = 'site:s3.amazonaws.com ' + targetDomain;
+            var site = 'site:s3.amazonaws.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 86:
-            var site = 'site:blob.core.windows.net ' + targetDomain;
+            var site = 'site:blob.core.windows.net "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 87:
-            var site = 'site:googleapis.com ' + targetDomain;
+            var site = 'site:googleapis.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 88:
-            var site = 'site:drive.google.com ' + targetDomain;
+            var site = 'site:drive.google.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 89:
-            var site = 'site:dev.azure.com ' + targetDomain;
+            var site = 'site:dev.azure.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 90:
-            var site = 'site:onedrive.live.com ' + targetDomain;
+            var site = 'site:onedrive.live.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 91:
-            var site = 'site:digitaloceanspaces.com ' + targetDomain;
+            var site = 'site:digitaloceanspaces.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 92:
-            var site = 'site:sharepoint.com ' + targetDomain;
+            var site = 'site:sharepoint.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 93:
-            var site = 'site:s3-external-1.amazonaws.com ' + targetDomain;
+            var site = 'site:s3-external-1.amazonaws.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 94:
-            var site = 'site:s3.dualstack.us-east-1.amazonaws.com ' + targetDomain;
+            var site = 'site:s3.dualstack.us-east-1.amazonaws.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 95:
-            var site = 'site:dropbox.com/s ' + targetDomain;
+            var site = 'site:dropbox.com/s "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 96:
-            var site = 'site:box.com/s ' + targetDomain;
+            var site = 'site:box.com/s "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 97:
-            var site = 'site:docs.google.com inurl:"/d/" ' + targetDomain;
+            var site = 'site:docs.google.com inurl:"/d/" "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 98:
-            var site = 'site:jfrog.io ' + targetDomain;
+            var site = 'site:jfrog.io "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 99:
-            var site = 'site:firebaseio.com ' + targetDomain;
+            var site = 'site:firebaseio.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
@@ -399,74 +399,74 @@ function googleSearch(type) {
             searchQuery += ' "Authorization: Bearer"';
             break;
         case 104:
-            var site = 'site:scribd.com ' + targetDomain;
+            var site = 'site:scribd.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 105:
-            var site = 'site:npmjs.com ' + targetDomain;
+            var site = 'site:npmjs.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 106:
-            var site = 'site:npm.runkit.com ' + targetDomain;
+            var site = 'site:npm.runkit.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 107:
-            var site = 'site:libraries.io ' + targetDomain;
+            var site = 'site:libraries.io "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 108:
-            var site = 'site:coggle.it ' + targetDomain;
+            var site = 'site:coggle.it "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 109:
-            var site = 'site:papaly.com ' + targetDomain;
+            var site = 'site:papaly.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 110:
-            var site = 'site:prezi.com ' + targetDomain;
+            var site = 'site:prezi.com "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 111:
-            var site = 'site:jsdelivr.net ' + targetDomain;
+            var site = 'site:jsdelivr.net "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 112:
 
         case 113:
-            var site = 'site:repl.it ' + targetDomain;
+            var site = 'site:repl.it "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 114:
-            var site = 'site:gitter.im ' + targetDomain;
+            var site = 'site:gitter.im "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 115:
-            var site = 'site:bitbucket.org ' + targetDomain;
+            var site = 'site:bitbucket.org "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 116:
-            var site = 'site:*.atlassian.net ' + targetDomain;
+            var site = 'site:*.atlassian.net "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 117:
-            var site = 'inurl:gitlab ' + targetDomain;
+            var site = 'inurl:gitlab "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 118:
-            var site = 'inurl:github ' + targetDomain;
+            var site = 'inurl:github "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
@@ -696,22 +696,22 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 164:
-            var site = 'site:github.com api key regex ' + targetDomain;
+            var site = 'site:github.com api key regex "' + targetDomain + '"';
             var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
             window.open(url, '_blank');
             return;
         case 165:
-            var site = '"apiKey" ' + targetDomain;
+            var site = '"apiKey" "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 166:
-            var site = '"Bearer" ' + targetDomain;
+            var site = '"Bearer" "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 167:
-            var site = '"token" ' + targetDomain;
+            var site = '"token" "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
@@ -721,332 +721,332 @@ function googleSearch(type) {
             window.open(url, '_blank');
             return;
         case 169:
-            var site = '"secret" ' + targetDomain;
+            var site = '"secret" "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 170:
-            var site = 'filename:.env OR filename:.json "api_key" ' + targetDomain;
+            var site = 'filename:.env OR filename:.json "api_key" "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 171:
-            var site = 'api_key ' + targetDomain;
+            var site = 'api_key "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 172:
-            var site = '“api keys” ' + targetDomain;
+            var site = '“api keys” "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 173:
-            var site = 'authorization_bearer: ' + targetDomain;
+            var site = 'authorization_bearer: "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 174:
-            var site = 'oauth ' + targetDomain;
+            var site = 'oauth "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 175:
-            var site = 'auth ' + targetDomain;
+            var site = 'auth "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 176:
-            var site = 'authentication ' + targetDomain;
+            var site = 'authentication "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 177:
-            var site = 'client_secret ' + targetDomain;
+            var site = 'client_secret "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 178:
-            var site = 'api_token: ' + targetDomain;
+            var site = 'api_token: "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 179:
-            var site = '“api token” ' + targetDomain;
+            var site = '“api token” "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 180:
-            var site = 'client_id ' + targetDomain;
+            var site = 'client_id "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 181:
-            var site = 'password ' + targetDomain;
+            var site = 'password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 182:
-            var site = 'user_password ' + targetDomain;
+            var site = 'user_password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 183:
-            var site = 'user_pass ' + targetDomain;
+            var site = 'user_pass "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 184:
-            var site = 'passcode ' + targetDomain;
+            var site = 'passcode "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 185:
-            var site = 'client_secret ' + targetDomain;
+            var site = 'client_secret "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 186:
-            var site = 'secret ' + targetDomain;
+            var site = 'secret "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 187:
-            var site = 'password hash ' + targetDomain;
+            var site = 'password hash "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 188:
-            var site = 'OTP ' + targetDomain;
+            var site = 'OTP "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 189:
-            var site = 'user auth ' + targetDomain;
+            var site = 'user auth "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 190:
-            var site = 'remove password ' + targetDomain;
+            var site = 'remove password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 191:
-            var site = 'root ' + targetDomain;
+            var site = 'root "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 192:
-            var site = 'admin ' + targetDomain;
+            var site = 'admin "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 193:
-            var site = 'log ' + targetDomain;
+            var site = 'log "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 194:
-            var site = 'trash ' + targetDomain;
+            var site = 'trash "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 196:
-            var site = 'FTP_PORT ' + targetDomain;
+            var site = 'FTP_PORT "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 197:
-            var site = 'FTP_PASSWORD ' + targetDomain;
+            var site = 'FTP_PASSWORD "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 198:
-            var site = 'DB_DATABASE= ' + targetDomain;
+            var site = 'DB_DATABASE= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 199:
-            var site = 'DB_HOST= ' + targetDomain;
+            var site = 'DB_HOST= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 200:
-            var site = 'DB_PORT= ' + targetDomain;
+            var site = 'DB_PORT= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 201:
-            var site = 'DB_PASSWORD= ' + targetDomain;
+            var site = 'DB_PASSWORD= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 202:
-            var site = 'DB_PW= ' + targetDomain;
+            var site = 'DB_PW= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 203:
-            var site = 'DB_USER= ' + targetDomain;
+            var site = 'DB_USER= "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 204:
-            var site = 'number ' + targetDomain;
+            var site = 'number "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 205:
-            var site = 'like: language:shell username ' + targetDomain;
+            var site = 'like: language:shell username "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 206:
-            var site = 'language:sql username ' + targetDomain;
+            var site = 'language:sql username "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 207:
-            var site = 'language:python ftp ' + targetDomain;
+            var site = 'language:python ftp "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 208:
-            var site = 'language:bash ftp ' + targetDomain;
+            var site = 'language:bash ftp "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 209:
-            var site = 'dotfiles ' + targetDomain;
+            var site = 'dotfiles "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 210:
-            var site = 'filename:sftp-config.json password ' + targetDomain;
+            var site = 'filename:sftp-config.json password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 211:
-            var site = 'filename:.s3cfg ' + targetDomain;
+            var site = 'filename:.s3cfg "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 212:
-            var site = 'filename:config.php dbpasswd ' + targetDomain;
+            var site = 'filename:config.php dbpasswd "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 213:
-            var site = 'filename:.bashrc password ' + targetDomain;
+            var site = 'filename:.bashrc password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 214:
-            var site = 'filename:.esmtprc password ' + targetDomain;
+            var site = 'filename:.esmtprc password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 215:
-            var site = 'filename:.netrc password ' + targetDomain;
+            var site = 'filename:.netrc password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 216:
-            var site = 'filename:_netrc password ' + targetDomain;
+            var site = 'filename:_netrc password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 217:
-            var site = 'filename:.env MAIL_HOST=smtp.gmail.com ' + targetDomain;
+            var site = 'filename:.env MAIL_HOST=smtp.gmail.com "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 218:
-            var site = 'filename:prod.exs NOT prod.secret.exs ' + targetDomain;
+            var site = 'filename:prod.exs NOT prod.secret.exs "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 219:
-            var site = 'filename:.npmrc _auth ' + targetDomain;
+            var site = 'filename:.npmrc _auth "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 220:
-            var site = 'filename:WebServers.xml ' + targetDomain;
+            var site = 'filename:WebServers.xml "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 221:
-            var site = 'filename:sftp-config.json ' + targetDomain;
+            var site = 'filename:sftp-config.json "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 222:
-            var site = 'filename:.esmtprc password ' + targetDomain;
+            var site = 'filename:.esmtprc password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 224:
-            var site = 'filename:passwd path:etc ' + targetDomain;
+            var site = 'filename:passwd path:etc "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 225:
-            var site = 'filename:prod.secret.exs ' + targetDomain;
+            var site = 'filename:prod.secret.exs "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 226:
-            var site = 'filename:sftp-config.json ' + targetDomain;
+            var site = 'filename:sftp-config.json "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 227:
-            var site = 'filename:proftpdpasswd ' + targetDomain;
+            var site = 'filename:proftpdpasswd "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 228:
-            var site = 'filename:travis.yml ' + targetDomain;
+            var site = 'filename:travis.yml "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 229:
-            var site = 'filename:vim_settings.xml ' + targetDomain;
+            var site = 'filename:vim_settings.xml "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 230:
-            var site = 'filename:sftp.json path:.vscode ' + targetDomain;
+            var site = 'filename:sftp.json path:.vscode "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 231:
-            var site = 'filename:secrets.yml password ' + targetDomain;
+            var site = 'filename:secrets.yml password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 232:
-            var site = 'extension:sql mysql dump ' + targetDomain;
+            var site = 'extension:sql mysql dump "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 233:
-            var site = 'extension:sql mysql dump ' + targetDomain;
+            var site = 'extension:sql mysql dump "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 234:
-            var site = 'extension:sql mysql dump password ' + targetDomain;
+            var site = 'extension:sql mysql dump password "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 235:
-            var site = 'extension:pem private ' + targetDomain;
+            var site = 'extension:pem private "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
         case 236:
-            var site = 'extension:ppk private ' + targetDomain;
+            var site = 'extension:ppk private "' + targetDomain + '"';
             var url = 'https://github.com/search?q=' + encodeURIComponent(site) + '&type=host';
             window.open(url, '_blank');
             return;
