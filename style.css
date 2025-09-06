@@ -12,34 +12,73 @@ body {
     background: #18243a;
     border-radius: 10px;
     box-shadow: 0 2px 16px #0a223a99;
-    padding: 24px;
+    padding: 0; /* Cambiado de 24px a 0 */
     border: 2px solid #1ecbe1;
+    overflow: hidden; /* Agregado para contener elementos internos */
 }
 h1 {
-    text-align: center;
-    font-size: 1.6em;
-    margin-bottom: 16px;
+    text-align: left; /* Cambiado de center a left */
+    font-size: 1.4em; /* Reducido ligeramente */
+    margin: 0; /* Removido margin-bottom */
     letter-spacing: 1px;
     color: #1ecbe1;
     text-shadow: 0 2px 8px #1ecbe144;
+    white-space: nowrap;
 }
 label {
-    font-size: 1em;
-    margin-bottom: 8px;
+    font-size: 0.9em; /* Ligeramente más pequeño */
+    margin-bottom: 0; /* Removido margin */
     display: block;
     color: #7ee0ff;
 }
 #target {
-    width: 97.5%;
+    width: 100%;
+    box-sizing: border-box; /* Agregado para mejor control del tamaño */
     padding: 10px;
     border-radius: 5px;
     border: 1.5px solid #1ecbe1;
     background: #22304a;
     color: #fff;
-    margin-bottom: 16px;
+    margin-bottom: 0; /* Removido margin */
     font-size: 1em;
     box-shadow: 0 1px 4px #1ecbe122;
+    flex: 1;
 }
+
+/* Grupo para input y botón reset */
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 0; /* Removido margin */
+}
+
+/* Botón Reset All pequeño al lado del input */
+.reset-all-small {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    border: 1px solid #ff8a80;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+    white-space: nowrap;
+    min-width: 80px;
+}
+.reset-all-small:hover {
+    background: linear-gradient(135deg, #ee5a52, #ff6b6b);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.reset-all-small:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(255, 107, 107, 0.3);
+}
+
 #target:focus {
     border: 2px solid #7ee0ff;
     outline: none;
@@ -49,7 +88,8 @@ details {
     background: #22304a;
     border-radius: 7px;
     padding: 0 0 8px 0;
-    /* border-left: 5px solid #1ecbe1; */
+    position: relative;
+    border: 1px solid rgba(30, 203, 225, 0.2); /* Borde sutil para uniformidad */
 }
 summary {
     font-weight: 600;
@@ -59,6 +99,9 @@ summary {
     outline: none;
     color: #1ecbe1;
     user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .dork-buttons {
     display: flex;
@@ -91,44 +134,151 @@ summary {
     border: 2px solid #fff;
     box-shadow: 0 2px 12px #1ecbe188;
 }
-.footer {
-    text-align: center;
-    margin-top: 20px;
+
+/* Estilo para botones marcados como completados */
+.futuristic-button.completed {
+    background: linear-gradient(135deg, #2d5a27, #4a7c59) !important;
+    border-color: #5d8b3a !important;
+    color: #fff !important;
+    position: relative;
 }
-.footer img {
-    width: 50px;
-    height: 50px;
-    opacity: 0.85;
-    transition: opacity 0.2s, filter 0.2s;
-    filter: drop-shadow(0 2px 8px #1ecbe144);
+
+.futuristic-button.completed::after {
+    content: "✓";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #90ee90;
+    font-weight: bold;
+    font-size: 14px;
 }
-.footer img:hover {
-    opacity: 1;
-    filter: drop-shadow(0 4px 24px #1ecbe199);
+
+.futuristic-button.completed:hover {
+    background: linear-gradient(135deg, #4a7c59, #2d5a27) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(77, 124, 89, 0.4);
 }
+
+/* Botón de reset por categoría */
+.reset-category {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    border: 1px solid #ff8a80;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.2);
+    margin-right: 10px;
+}
+
+.reset-category:hover {
+    background: linear-gradient(135deg, #ee5a52, #ff6b6b);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.reset-category:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(255, 107, 107, 0.3);
+}
+
+/* Header sticky mejorado */
 .sticky-header {
     position: sticky;
     top: 0;
     z-index: 100;
     background: #18243a;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 24px;
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 2px 16px #0a223a99;
+    box-shadow: 0 2px 8px rgba(10, 34, 58, 0.3);
+    border: none;
+    border-bottom: 1px solid #1ecbe1;
+    margin: 0;
 }
 
-/* Ajusta el input para que se vea bien en sticky */
-.sticky-header label,
-.sticky-header input {
-    margin-bottom: 0;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    max-width: 400px;
+}
+
+/* Contenido principal del container */
+.main-content {
+    padding: 24px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 24px; /* Padding consistente */
+    border-top: 1px solid rgba(30, 203, 225, 0.2); /* Separador sutil */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        padding: 12px;
+        padding: 0;
+        margin: 10px;
+        border-radius: 8px;
     }
+    
+    .sticky-header {
+        padding: 12px 16px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    
+    .input-section {
+        max-width: none;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    
+    .reset-all-small {
+        align-self: center;
+        min-width: 120px;
+    }
+    
+    .main-content {
+        padding: 16px;
+    }
+    
+    .footer {
+        padding: 16px;
+    }
+    
     .futuristic-button {
         flex: 1 1 100%;
     }
-
 }

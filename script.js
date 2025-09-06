@@ -7,6 +7,12 @@ function googleSearch(type) {
         return;
     }
 
+    // Marcar el botón como completado
+    markButtonAsCompleted(type);
+    
+    // Guardar progreso para este dominio
+    saveProgress(targetDomain, type);
+
     var searchQuery = 'site:' + targetDomain;
 
     switch (type) {
@@ -1093,3 +1099,136 @@ function googleSearch(type) {
     var url = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery);
     window.open(url, '_blank');
 }
+
+// Función para marcar botón como completado
+function markButtonAsCompleted(type) {
+    var buttons = document.querySelectorAll('button[onclick="googleSearch(' + type + ')"]');
+    buttons.forEach(function(button) {
+        button.classList.add('completed');
+    });
+}
+
+// Función para guardar progreso en localStorage
+function saveProgress(domain, type) {
+    var key = 'bugbounty_progress_' + domain.toLowerCase();
+    var progress = JSON.parse(localStorage.getItem(key) || '[]');
+    
+    if (!progress.includes(type)) {
+        progress.push(type);
+        localStorage.setItem(key, JSON.stringify(progress));
+    }
+}
+
+// Función para cargar progreso desde localStorage
+function loadProgress(domain) {
+    if (!domain) return;
+    
+    var key = 'bugbounty_progress_' + domain.toLowerCase();
+    var progress = JSON.parse(localStorage.getItem(key) || '[]');
+    
+    // Limpiar marcas previas
+    resetAllButtons();
+    
+    // Marcar botones según progreso guardado
+    progress.forEach(function(type) {
+        markButtonAsCompleted(type);
+    });
+}
+
+// Función para resetear todos los botones
+function resetAllButtons() {
+    var buttons = document.querySelectorAll('.futuristic-button');
+    buttons.forEach(function(button) {
+        button.classList.remove('completed');
+    });
+}
+
+// Función para resetear botones de una categoría específica
+function resetCategoryButtons(categoryElement) {
+    var targetDomain = document.getElementById('target').value;
+    if (!targetDomain) return;
+    
+    var buttons = categoryElement.querySelectorAll('.futuristic-button');
+    var typesToRemove = [];
+    
+    buttons.forEach(function(button) {
+        button.classList.remove('completed');
+        // Extraer el número del tipo del onclick
+        var match = button.getAttribute('onclick').match(/googleSearch\((\d+)\)/);
+        if (match) {
+            typesToRemove.push(parseInt(match[1]));
+        }
+    });
+    
+    // Remover del localStorage
+    var key = 'bugbounty_progress_' + targetDomain.toLowerCase();
+    var progress = JSON.parse(localStorage.getItem(key) || '[]');
+    progress = progress.filter(type => !typesToRemove.includes(type));
+    localStorage.setItem(key, JSON.stringify(progress));
+}
+
+// Función para resetear progreso completo del dominio actual
+function resetAllProgress() {
+    var targetDomain = document.getElementById('target').value;
+    if (!targetDomain) return;
+    
+    var key = 'bugbounty_progress_' + targetDomain.toLowerCase();
+    localStorage.removeItem(key);
+    resetAllButtons();
+}
+
+// Función para detectar cambios en el input del dominio
+function onDomainChange() {
+    var targetDomain = document.getElementById('target').value;
+    loadProgress(targetDomain);
+}
+
+    // Event listener para inicializar la aplicación
+document.addEventListener('DOMContentLoaded', function() {
+    // Botón de reset all (ahora es .reset-all-small)
+    const resetAllButton = document.querySelector('.reset-all-small');
+    if (resetAllButton) {
+        resetAllButton.addEventListener('click', function() {
+            if (confirm('¿Estás seguro de que quieres resetear todo el progreso?')) {
+                resetAllProgress();
+                alert('✅ Progreso reseteado completamente.');
+            }
+        });
+    }
+    
+    // Botones de reset por categoría
+    const resetCategoryButtons = document.querySelectorAll('.reset-category');
+    resetCategoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.closest('details');
+            const categoryName = category.querySelector('summary').textContent.split('Reset')[0].trim();
+            
+            if (confirm(`¿Resetear progreso de "${categoryName}"?`)) {
+                resetCategoryButtons(category);
+                alert(`✅ Progreso de "${categoryName}" reseteado.`);
+            }
+        });
+    });
+    
+    // Cargar progreso inicial si hay dominio
+    var targetInput = document.getElementById('target');
+    
+    if (targetInput.value) {
+        loadProgress(targetInput.value);
+    }
+    
+    // Detectar cambios en el input
+    targetInput.addEventListener('input', onDomainChange);
+    targetInput.addEventListener('change', onDomainChange);
+    
+    // Guardar el dominio actual cuando se enfoca para comparar cambios
+    targetInput.addEventListener('focus', function() {
+        this.dataset.previousValue = this.value;
+    });
+    
+    targetInput.addEventListener('blur', function() {
+        if (this.dataset.previousValue !== this.value) {
+            onDomainChange();
+        }
+    });
+});

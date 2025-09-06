@@ -9,12 +9,24 @@
 <body>
     <div class="container">
         <div class="sticky-header">
-            <h1>Bug Bounty Search Engine</h1>
-            <label for="target">Target Domain:</label>
-            <input type="text" id="target" placeholder="example.com">
+            <div class="header-content">
+                <h1>Bug Bounty Search Engine</h1>
+                <div class="input-section">
+                    <label for="target">Target Domain:</label>
+                    <div class="input-group">
+                        <input type="text" id="target" placeholder="example.com">
+                        <button class="reset-all-small" onclick="resetAllProgress()">
+                            Reset All
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <details open>
-            <summary>Subdominios y Certificados</summary>
+            <summary>
+                Subdominios y Certificados
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(18)">Subdomains</button>
                 <button class="futuristic-button" onclick="googleSearch(19)">Sub-Subdomains</button>
@@ -22,7 +34,12 @@
             </div>
         </details>
         <details open>
-            <summary>Archivos y Directorios Expuestos</summary>
+            <summary>
+                Archivos y Directorios Expuestos
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">
+                    <i class="fas fa-undo"></i> Reset
+                </button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(1)">Directory listing</button>
                 <button class="futuristic-button" onclick="googleSearch(2)">Config files</button>
@@ -49,7 +66,10 @@
             </div>
         </details>
         <details open>
-            <summary>WordPress & CMS</summary>
+            <summary>
+                WordPress & CMS
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(10)">Find WordPress #1</button>
                 <button class="futuristic-button" onclick="googleSearch(20)">Find WordPress #2</button>
@@ -64,7 +84,10 @@
             </div>
         </details>
         <details open>
-            <summary>Errores y Vulnerabilidades</summary>
+            <summary>
+                Errores y Vulnerabilidades
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(77)">Sensitive Parameters</button>
                 <button class="futuristic-button" onclick="googleSearch(7)">SQL errors</button>
@@ -88,7 +111,10 @@
             </div>
         </details>
         <details open>
-            <summary>Paneles y Accesos</summary>
+            <summary>
+                Paneles y Accesos
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(6)">Login pages</button>
                 <button class="futuristic-button" onclick="googleSearch(42)">Admin Portal</button>
@@ -97,7 +123,10 @@
             </div>
         </details>
         <details open>
-            <summary>Servicios</summary>
+            <summary>
+                Servicios
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">               
                 <button class="futuristic-button" onclick="googleSearch(38)">GeoServer WFS</button>
                 <button class="futuristic-button" onclick="googleSearch(39)">ArcGIS REST</button>
@@ -109,7 +138,10 @@
             </div>
         </details>
         <details open>
-            <summary>OSINT & Indexes</summary>
+            <summary>
+                OSINT & Indexes
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(16)">LinkedIn</button>
                 <button class="futuristic-button" onclick="googleSearch(23)">ThreatCrowd</button>
@@ -128,7 +160,10 @@
             </div>
         </details>
         <details open>
-            <summary>Shodan Infrastructure</summary>
+            <summary>
+                Shodan Infrastructure
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(37)">Basic Search</button>
                 <button class="futuristic-button" onclick="googleSearch(119)">SSL</button>
@@ -169,7 +204,10 @@
             </div>
         </details>
         <details open>
-            <summary>Shodan Files and Directories</summary>
+            <summary>
+                Shodan Files and Directories
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(142)">Index of /</button>
                 <button class="futuristic-button" onclick="googleSearch(143)">Config.php</button>
@@ -191,7 +229,10 @@
             </div>
         </details>
         <details open>
-            <summary>API Keys</summary>
+            <summary>
+                API Keys
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(100)">apiKey</button>
                 <button class="futuristic-button" onclick="googleSearch(101)">Token</button>
@@ -200,7 +241,10 @@
             </div>
         </details>
         <details open>
-            <summary>Code Leaks</summary>
+            <summary>
+                Code Leaks
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(15)">Pastebin</button>
                 <button class="futuristic-button" onclick="googleSearch(82)">JSFiddle</button>
@@ -220,7 +264,10 @@
             </div>
         </details>
         <details open>
-            <summary>Cloud Storage</summary>
+            <summary>
+                Cloud Storage
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(85)">AWS #1</button>
                 <button class="futuristic-button" onclick="googleSearch(93)">AWS #2</button>
@@ -238,7 +285,10 @@
             </div>
         </details>
         <details open>
-            <summary>SWF</summary>
+            <summary>
+                SWF
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(24)">Find SWF</button>
                 <button class="futuristic-button" onclick="googleSearch(25)">Find MIME-SWF</button>
@@ -247,7 +297,10 @@
             </div>
         </details>
         <details open>
-            <summary>Basic GitHub Dorks</summary>
+            <summary>
+                Basic GitHub Dorks
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(21)">Domain</button>
                 <button class="futuristic-button" onclick="googleSearch(164)">API Keys</button>
@@ -279,7 +332,10 @@
             </div>
         </details>
         <details open>
-            <summary>General GitHub Dorks</summary>
+            <summary>
+                General GitHub Dorks
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(190)">remove password</button>
                 <button class="futuristic-button" onclick="googleSearch(191)">root</button>
@@ -298,7 +354,10 @@
             </div>
         </details>
         <details open>
-            <summary>Language GitHub Dorks</summary>
+            <summary>
+                Language GitHub Dorks
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(205)">like: language:shell username</button>
                 <button class="futuristic-button" onclick="googleSearch(206)">language:sql username</button>
@@ -307,7 +366,10 @@
             </div>
         </details>
         <details open>
-            <summary>Usefull GitHub Dorks</summary>
+            <summary>
+                Usefull GitHub Dorks
+                <button class="reset-category" onclick="resetCategoryButtons(this.closest('details'))" style="float: right; font-size: 12px; padding: 2px 8px;">Reset</button>
+            </summary>
             <div class="dork-buttons">
                 <button class="futuristic-button" onclick="googleSearch(209)">dotfiles</button>
                 <button class="futuristic-button" onclick="googleSearch(210)">filename:sftp-config.json password</button>
